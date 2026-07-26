@@ -136,14 +136,6 @@ const CONFIG_PROJECTS = [
     link:     "https://drive.google.com/drive/folders/1UotAsUUCON7D76E6SZh5DGiDKKAi0ER7?usp=sharing",
   },
   {
-    title:    "Tinkercad Arduino IoT",
-    desc:     "Arduino Uno yang menampilkan simulasi lampu lalu lintas dengan Internet of Things (IoT)",
-    tags:     ["Arduino"],
-    category: "Tinkercad",
-    image:    "img/SIMULASI_LAMPU_LALULINTAS.png",
-    link:     "https://www.tinkercad.com/things/9Lkaz77T7WW/editel",
-  },
-  {
     title:    "Design 3D",
     desc:     "Design 3D random yang memperlihatkan seekor anak ayam.",
     tags:     ["3D"],
