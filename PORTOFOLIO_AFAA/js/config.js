@@ -58,7 +58,7 @@ const CONFIG_STATS = [
    Ganti nilai "url" dengan link profilmu. Kosongkan ("") untuk sembunyi.
    ---------------------------------------------------------------- */
 const CONFIG_SOCIAL = {
-  email:     "afaelyumapratama@gmail.com",
+  email:     "afaelyumap.xpplg2@gmail.com",
   instagram: "https://www.instagram.com/afaaaa5689?igsh=MTR6ZzRmYmQwOHM5cA==",   // kosongkan "" untuk sembunyikan
   github:    "https://github.com/Afa-El",
   linkedin:  "www.linkedin.com/in/afa-el-yuma-pratama-a98858384",
