@@ -85,7 +85,7 @@ const CONFIG_SKILLS = {
     {
       icon:   "fa-solid fa-wrench",
       title:  "Tools & Others",
-      tags:   ["Canva", "Figma", "GitHub", "Vercel", "Tinkercad", "ChatGPT", "Git", "Microsoft Office"],
+      tags:   ["Canva", "Figma", "GitHub", "Vercel", "Tinkercad", "ChatGPT", "Claude AI", "Git", "Microsoft Office"],
     },
   ],
 
