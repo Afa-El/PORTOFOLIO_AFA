@@ -13,8 +13,8 @@
    ---------------------------------------------------------------- */
 const CONFIG_PROFILE = {
   name:       "Afa El Yuma Pratama",   // Nama lengkap kamu
-  initials:   "Afa",                  // 2 huruf inisial (untuk logo & avatar)
-  tagline:    "Fullstack Developer & UI/UX Designer", // Kalimat singkat di bawah nama
+  initials:   "AE",                  // 2 huruf inisial (untuk logo & avatar)
+  tagline:    "UI/UX Designer & Front-End Developer", // Kalimat singkat di bawah nama
   greeting:   "Halo, Welcome in",          // Kata sapaan sebelum nama besar
   bio: [
     // Paragraf pertama tentang kamu (boleh diedit bebas)
@@ -58,7 +58,7 @@ const CONFIG_STATS = [
    Ganti nilai "url" dengan link profilmu. Kosongkan ("") untuk sembunyi.
    ---------------------------------------------------------------- */
 const CONFIG_SOCIAL = {
-  email:     "afaelyumap.xpplg2@gmail.com",
+  email:     "afaelyumapratama.rpl2@gmail.com",
   instagram: "https://www.instagram.com/afaaaa5689?igsh=MTR6ZzRmYmQwOHM5cA==",   // kosongkan "" untuk sembunyikan
   github:    "https://github.com/Afa-El",
   linkedin:  "www.linkedin.com/in/afa-el-yuma-pratama-a98858384",
@@ -75,7 +75,7 @@ const CONFIG_SKILLS = {
     {
       icon:   "fa-solid fa-desktop",
       title:  "Frontend",
-      tags:   ["HTML", "CSS", "JavaScript"],
+      tags:   ["HTML5", "CSS", "JavaScript"],
     },
     {
       icon:   "fa-solid fa-server",
@@ -85,13 +85,13 @@ const CONFIG_SKILLS = {
     {
       icon:   "fa-solid fa-wrench",
       title:  "Tools & Others",
-      tags:   ["GitHub", "Figma", "VS Code", "Canva", "CapCut"],
+      tags:   ["GitHub", "Figma", "VS Code", "Canva", "Tinkercad", ""],
     },
   ],
 
   bars: [
     { name: "Frontend Development", pct: 75 },
-    { name: "Backend Development", pct: 60 },
+    { name: "Backend Development", pct: 65},
     { name: "UI / UX Design",       pct: 80 },
   ],
 };
@@ -117,7 +117,7 @@ const CONFIG_PROJECTS = [
     tags:     ["HTML", "CSS", "JavaScript"],
     category: "Web",
     image:    "img/PROJECT_2.png",
-    link:     "http://127.0.0.1:5501/",
+    link:     "https://portofolio-afa-igck.vercel.app",
   },
   {
     title:    "Website Random",
@@ -137,9 +137,9 @@ const CONFIG_PROJECTS = [
   },
   {
     title:    "Design 3D",
-    desc:     "Design 3D random yang memperlihatkan seekor anak ayam.",
-    tags:     ["3D"],
-    category: "3D",
+    desc:     "Design 3D random yang menggambarkan seekor anak ayam, yang saya buat di Tinkercad.",
+    tags:     ["Tinkercad"],
+    category: "Tinkercad",
     image:    "img/PROJECT_3D.png",
     link:     "https://drive.google.com/file/d/1v_L4St__xMli90VkKi5orHCdcDmnjLNb/view?usp=sharing",
   },
@@ -161,7 +161,7 @@ const CONFIG_PROJECTS = [
   },
   {
     title:    "UI/UX Figma Design",
-    desc:     "Project Figma UI/UX simpel yang saya buat disaat tidak memiliki pekerjaan.",
+    desc:     "Design Figma UI/UX yang saya buat disaat tidak memiliki pekerjaan.",
     tags:     ["Figma"],
     category: "Figma",
     image:    "img/PROJECT_ALAALA.png",
