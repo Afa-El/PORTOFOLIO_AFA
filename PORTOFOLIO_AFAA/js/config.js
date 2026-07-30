@@ -39,7 +39,7 @@ const CONFIG_PROFILE = {
   statusOpen: true,    // true = titik hijau (aktif), false = titik merah
 
   // Link tombol "Unduh CV" — ganti dengan path file CV kamu
-  cvLink:     "img/CV_AFAELYUMAP.pdf",     // contoh: "file/cv-rizky.pdf"
+  cvLink:     "img/CV_AFAELYUMAPRATAMA.pdf",     // contoh: "file/cv-rizky.pdf"
 };
 
 /* ----------------------------------------------------------------
@@ -75,17 +75,17 @@ const CONFIG_SKILLS = {
     {
       icon:   "fa-solid fa-desktop",
       title:  "Frontend",
-      tags:   ["HTML5", "CSS", "JavaScript"],
+      tags:   ["HTML5", "CSS3", "JavaScript"],
     },
     {
       icon:   "fa-solid fa-server",
       title:  "Backend",
-      tags:   ["PHP","MySQL"],
+      tags:   ["Python", "MySQL"],
     },
     {
       icon:   "fa-solid fa-wrench",
       title:  "Tools & Others",
-      tags:   ["GitHub", "Figma", "VS Code", "Canva", "Tinkercad", ""],
+      tags:   ["Canva", "Figma", "GitHub", "Vercel", "Tinkercad", "ChatGPT", "Git", "Microsoft Office"],
     },
   ],
 
