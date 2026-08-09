@@ -161,14 +161,21 @@ const CONFIG_PROJECTS = [
   },
   {
     title:    "UI/UX Figma Design",
-    desc:     "Design Figma UI/UX yang saya buat disaat tidak memiliki pekerjaan.",
+    desc:     "Design Figma UI/UX yang saya buat untuk melatih diri saya sendiri.",
     tags:     ["Figma"],
     category: "Figma",
     image:    "img/PROJECT_ALAALA.png",
     link:     "https://www.figma.com/design/Kh8nzFVUb8CfLfJ2wgL0O3/Web-Matcha?node-id=0-1&t=av32Au450n7QqK5m-1",
   },
+   {
+    title:    "UI/UX Figma Design",
+    desc:     "Design Figma UI/UX yang saya buat untuk dipresentasikan sebelum diberangkatkan PKL.",
+    tags:     ["Figma"],
+    category: "Figma",
+    image:    "img/PROJECT_ALAALA.png",
+    link:     "https://www.figma.com/proto/8IazqlsDnOcRteFcBglRqT/PROJECT-UI-UX?node-id=1-3&starting-point-node-id=1%3A3",
+  },
 ];
-
 
 /* ----------------------------------------------------------------
    🎨 WARNA TEMA  (opsional — skip jika tidak mau ubah)
