@@ -172,7 +172,7 @@ const CONFIG_PROJECTS = [
     desc:     "Design Figma UI/UX yang saya buat untuk dipresentasikan sebelum diberangkatkan PKL.",
     tags:     ["Figma"],
     category: "Figma",
-    image:    "img/PROJECT_ALAALA.png",
+    image:    "img/AI_UI.png",
     link:     "https://www.figma.com/proto/8IazqlsDnOcRteFcBglRqT/PROJECT-UI-UX?node-id=1-3&starting-point-node-id=1%3A3",
   },
 ];
