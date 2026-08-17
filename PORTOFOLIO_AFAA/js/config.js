@@ -18,12 +18,12 @@ const CONFIG_PROFILE = {
   greeting:   "Halo, Welcome in",          // Kata sapaan sebelum nama besar
   bio: [
     // Paragraf pertama tentang kamu (boleh diedit bebas)
-    `Saya Afa El Yuma Pratama, seorang UI/UX Designer dan Fullstack Developer
+    `Saya Afa El Yuma Pratama, saya memiliki minat pada bidang UI/UX Designer dan Front-End Developer
      yang berbasis di Blitar, Indonesia. Saya senang mengubah ide-ide yang masih mentah
      menjadi antarmuka yang rapi dan menyenangkan—yang terasa nyaman saat digunakan sekaligus memanjakan mata.`,
     // Paragraf kedua (teknologi yang kamu pakai)
     `Perjalanan saya bermula di SMKS Brantas Karangkates, tempat saya menemukan
-     bagaimana desain dan kode dapat berpadu untuk memecahkan masalah nyata bagi pengguna nyata.
+     bagaimana desain dan kode dapat berpadu untuk memecahkan masalah nyata bagi pengguna.
      Sejak saat itu, saya sangat antusias dengan desain yang berbasis riset, detail yang playful,
      serta eksekusi yang presisi hingga ke tingkat piksel.`,
   ],
@@ -145,7 +145,7 @@ const CONFIG_PROJECTS = [
   },
   {
     title:    "Python Project",
-    desc:     "{Project python simpel yang pernah saya buat sendiri disekolahan sebagai tugas dan belajar mandiri}",
+    desc:     "{Project python simpel yang pernah saya buat sendiri disekolah sebagai tugas dan belajar mandiri.}",
     tags:     ["Python"],
     category: "Python",
     image:    "img/PROJECT_PYTHON.png",
