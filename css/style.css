@@ -1717,8 +1717,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   /* Hero Section (Compact & Sleek) */
   .hero{
     min-height: auto;
-    padding-top: calc(56px + 16px) !important;
-    padding-bottom: 24px !important;
+    padding-top: calc(56px + 38px) !important;
+    padding-bottom: 28px !important;
   }
   .hero-board{
     padding: 28px 14px 34px;
@@ -1984,8 +1984,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 
 @media (max-width: 480px){
+  .hero{
+    padding-top: calc(56px + 36px) !important;
+    padding-bottom: 24px !important;
+  }
   .section{
-    padding-top: calc(56px + 24px) !important;
+    padding-top: calc(56px + 32px) !important;
     padding-bottom: 28px !important;
   }
   .section-inner{ padding: 0 12px; }
