@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afa Portfolio — Creative Developer & Graphic Designer</title>
+<meta name="description" content="Portofolio personal Afa El Yuma Pratama — Web Developer & Graphic Designer">
+
+<!-- Google Fonts: Calistoga (retro chunky display), Fraunces (warm curvy serif), Plus Jakarta Sans (clean friendly body), Gochi Hand & Caveat (handwritten) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Caveat:wght@600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Gochi+Hand&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css?v=8">
+</head>
+<body>
+
+<!-- ============================= -->
+<!-- LOADING SCREEN                -->
+<!-- ============================= -->
+<div id="loading-screen" class="loading-screen" aria-hidden="true">
+  <div class="loading-inner">
+    <p class="loading-label">LOADING</p>
+    <h1 class="loading-title">AFA<span>PORTFOLIO</span></h1>
+    <div class="loading-bar-track">
+      <div class="loading-bar-fill" id="loadingBarFill"></div>
+    </div>
+    <p class="loading-percent" id="loadingPercent">0%</p>
+    <div class="loading-sticker loading-sticker--1">★</div>
+    <div class="loading-sticker loading-sticker--2">✎</div>
+    <div class="loading-sticker loading-sticker--3">✂</div>
+  </div>
+</div>
+
+<!-- Grain overlay for whole page -->
+<div class="grain-overlay" aria-hidden="true"></div>
+
+<!-- ============================= -->
+<!-- NAVBAR                        -->
+<!-- ============================= -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="#home" class="navbar-logo" data-tab="home" data-link>Afa<span>.</span></a>
+
+    <nav class="navbar-menu" id="navbarMenu">
+      <a href="#home" class="nav-link active" data-tab="home" data-link>Home</a>
+      <a href="#about" class="nav-link" data-tab="about" data-link>About</a>
+      <a href="#skills" class="nav-link" data-tab="skills" data-link>Skills</a>
+      <a href="#projects" class="nav-link" data-tab="projects" data-link>Projects</a>
+      <a href="#contact" class="nav-link" data-tab="contact" data-link>Contact</a>
+    </nav>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============================= -->
+  <!-- HERO / DASHBOARD CORKBOARD    -->
+  <!-- ============================= -->
+  <section class="hero tab-section is-active" id="home">
+    <div class="hero-board">
+
+      <!-- decorative pins -->
+      <span class="pin pin--1" aria-hidden="true"></span>
+      <span class="pin pin--2" aria-hidden="true"></span>
+      <span class="pin pin--3" aria-hidden="true"></span>
+
+      <!-- floating decorative bits -->
+      <div class="deco deco-year float-slow" aria-hidden="true">2026</div>
+      <div class="deco deco-star deco-star--1 float-slow" aria-hidden="true">★ DESIGN</div>
+      <div class="deco deco-star deco-star--2 float-slow" aria-hidden="true">★ CODE</div>
+      <div class="deco deco-star deco-star--3 float-slow" aria-hidden="true">★ CREATIVE</div>
+
+      <div class="sticky-note sticky-note--hero float-slow" aria-hidden="true">
+        made with<br>coffee &amp;<br>curiosity
+      </div>
+
+      <div class="tape tape--hero-1" aria-hidden="true"></div>
+      <div class="tape tape--hero-2" aria-hidden="true"></div>
+
+      <div class="hero-badge" aria-hidden="true">
+        <span>Est.</span>
+        <strong>2026</strong>
+      </div>
+
+      <div class="hero-content">
+        <span class="hero-tag">👋 Hello, I'm</span>
+        <h1 class="hero-name">Afa<span>.</span></h1>
+        <p class="hero-role">Creative Developer &amp; Graphic Designer</p>
+        <p class="hero-desc">Saya membuat website dan desain digital yang kreatif, interaktif, dan memiliki karakter.</p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary" data-tab="projects" data-link>LIHAT PROYEK</a>
+          <a href="#contact" class="btn btn-outline" data-tab="contact" data-link>HUBUNGI SAYA</a>
+        </div>
+      </div>
+
+      <div class="polaroid hero-polaroid float-slow" aria-hidden="true">
+        <div class="polaroid-img">
+          <img src="assets/images/profile.jpg" alt="Afa El Yuma Pratama">
+        </div>
+        <p class="polaroid-caption">say hi! 👋</p>
+      </div>
+
+      <!-- Flower cushion mascot inspired by the room photo -->
+      <div class="flower-cushion float-slow" aria-hidden="true" title="Afa's Room Mascot">
+        <div class="cushion-petals"></div>
+        <div class="cushion-center">
+          <span class="cushion-eye left"><span class="cushion-pupil"></span></span>
+          <span class="cushion-eye right"><span class="cushion-pupil"></span></span>
+        </div>
+      </div>
+
+      <!-- Checkered blanket trim inspired by the bed throw -->
+      <div class="hero-board-trim" aria-hidden="true"></div>
+    </div>
+
+    <div class="hero-nav-pills" aria-label="Navigasi bagian">
+      <span class="nav-pill-hint">Buka Menu:</span>
+      <a href="#about" class="nav-pill" data-tab="about" data-link>✦ Tentang Saya</a>
+      <a href="#skills" class="nav-pill" data-tab="skills" data-link>✦ Keahlian</a>
+      <a href="#projects" class="nav-pill" data-tab="projects" data-link>✦ Proyek</a>
+      <a href="#contact" class="nav-pill" data-tab="contact" data-link>✦ Kontak</a>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- ABOUT                          -->
+  <!-- ============================= -->
+  <section class="section about tab-section" id="about">
+    <div class="section-inner about-layout">
+
+      <div class="about-photo-wrap">
+        <div class="polaroid about-polaroid float-tilt" style="--r:-3deg">
+          <div class="polaroid-img">
+            <img src="assets/images/profile.jpg" alt="Afa El Yuma Pratama">
+          </div>
+          <p class="polaroid-caption">Afa, at work ✎</p>
+        </div>
+        <div class="tape tape--checker-green tape--about" aria-hidden="true"></div>
+        <div class="badge-circle float-reverse" style="--r:8deg" aria-hidden="true">STUDENT<br>DEV</div>
+
+        <!-- Floating bedroom stickers -->
+        <div class="deco-sticker deco-sticker--plant float-slow" style="--r:6deg" aria-hidden="true">🌱 GROWING</div>
+        <div class="deco-sticker deco-sticker--camera float-reverse" style="--r:-5deg" aria-hidden="true">📷 CREATIVE</div>
+      </div>
+
+      <div class="about-card paper-card">
+        <span class="pin pin--corner" aria-hidden="true"></span>
+        <div class="card-deco-stamp float-slow" style="--r:10deg" aria-hidden="true">★ DEV STUDIO</div>
+        <p class="eyebrow-handwritten">tentang saya</p>
+        <h2 class="section-title">ABOUT ME</h2>
+
+        <p class="about-text">Halo! Saya Afa El Yuma Pratama. Saya memiliki minat mendalam pada bidang UI/UX Design dan Front-End Development yang berbasis di Blitar, Indonesia.</p>
+        <p class="about-text">Perjalanan saya berawal di SMKS Brantas Karangkates (RPL), tempat saya mempelajari bagaimana desain riset, visual playful, dan kode rapi dapat berpadu memecahkan masalah nyata bagi pengguna.</p>
+
+        <ul class="id-card">
+          <li><span class="id-label">Name</span><span class="id-value">Afa El Yuma Pratama</span></li>
+          <li><span class="id-label">School</span><span class="id-value">SMKS Brantas Karangkates — RPL</span></li>
+          <li><span class="id-label">Location</span><span class="id-value">Blitar, Jawa Timur, Indonesia</span></li>
+          <li><span class="id-label">Focus</span><span class="id-value">UI/UX Design &amp; Front-End Developer</span></li>
+        </ul>
+
+        <div class="sticky-note sticky-note--about float-reverse" style="--r:3deg" aria-hidden="true">
+          curious mind &amp;<br>pixel lover ✨
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- SKILLS                         -->
+  <!-- ============================= -->
+  <section class="section skills tab-section" id="skills">
+    <div class="section-inner">
+      <div class="section-header-wrap">
+        <div class="section-floating-pill pill--left float-slow" style="--r:-5deg" aria-hidden="true">⚡ ALWAYS LEARNING</div>
+        <div class="section-floating-pill pill--right float-reverse" style="--r:4deg" aria-hidden="true">💡 PROBLEM SOLVER</div>
+        <span class="floating-sparkle sparkle--1 float-slow" aria-hidden="true">✦</span>
+        <span class="floating-sparkle sparkle--2 float-reverse" aria-hidden="true">★</span>
+
+        <p class="eyebrow-handwritten center">keahlian</p>
+        <h2 class="section-title center">MY SKILLS</h2>
+      </div>
+
+      <div class="skills-grid" id="skillsGrid">
+        <!-- Skill cards injected/animated via CSS+JS, static markup below -->
+        <div class="skill-card" data-percent="90">
+          <div class="skill-top">
+            <span class="skill-icon">&lt;/&gt;</span>
+            <span class="skill-name">HTML</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+          <span class="skill-percent">90%</span>
+        </div>
+
+        <div class="skill-card" data-percent="85">
+          <div class="skill-top">
+            <span class="skill-icon">🎨</span>
+            <span class="skill-name">CSS</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+          <span class="skill-percent">85%</span>
+        </div>
+
+        <div class="skill-card" data-percent="75">
+          <div class="skill-top">
+            <span class="skill-icon">JS</span>
+            <span class="skill-name">JavaScript</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+          <span class="skill-percent">75%</span>
+        </div>
+
+        <div class="skill-card" data-percent="60">
+          <div class="skill-top">
+            <span class="skill-icon">🐘</span>
+            <span class="skill-name">PHP</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+          <span class="skill-percent">60%</span>
+        </div>
+
+        <div class="skill-card" data-percent="65">
+          <div class="skill-top">
+            <span class="skill-icon">🗄</span>
+            <span class="skill-name">MySQL</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+          <span class="skill-percent">65%</span>
+        </div>
+
+        <div class="skill-card" data-percent="80">
+          <div class="skill-top">
+            <span class="skill-icon">✎</span>
+            <span class="skill-name">UI/UX Design</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+          <span class="skill-percent">80%</span>
+        </div>
+
+        <div class="skill-card" data-percent="82">
+          <div class="skill-top">
+            <span class="skill-icon">🖌</span>
+            <span class="skill-name">Graphic Design</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+          <span class="skill-percent">82%</span>
+        </div>
+
+        <div class="skill-card" data-percent="88">
+          <div class="skill-top">
+            <span class="skill-icon">◈</span>
+            <span class="skill-name">Figma</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+          <span class="skill-percent">88%</span>
+        </div>
+
+        <div class="skill-card" data-percent="75">
+          <div class="skill-top">
+            <span class="skill-icon">🐍</span>
+            <span class="skill-name">Python</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+          <span class="skill-percent">75%</span>
+        </div>
+
+        <div class="skill-card" data-percent="80">
+          <div class="skill-top">
+            <span class="skill-icon">⚙️</span>
+            <span class="skill-name">Odoo ERP</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+          <span class="skill-percent">80%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- PROJECTS                       -->
+  <!-- ============================= -->
+  <section class="section projects tab-section" id="projects">
+    <div class="section-inner">
+      <div class="section-header-wrap">
+        <div class="section-floating-pill pill--left float-reverse" style="--r:-4deg" aria-hidden="true">🎨 HANDCRAFTED</div>
+        <div class="section-floating-pill pill--right float-slow" style="--r:5deg" aria-hidden="true">🚀 RECENT BUILDS</div>
+        <span class="floating-sparkle sparkle--proj float-slow" aria-hidden="true">✦</span>
+
+        <p class="eyebrow-handwritten center">karya</p>
+        <h2 class="section-title center">MY PROJECTS</h2>
+      </div>
+
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn active" data-filter="all">ALL</button>
+        <button class="filter-btn" data-filter="website">WEBSITE</button>
+        <button class="filter-btn" data-filter="uiux">UI/UX DESIGN</button>
+        <button class="filter-btn" data-filter="other">3D, PYTHON &amp; IOT</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- 01: Web Pengecekan Suhu -->
+        <article class="project-card" data-category="website" style="--rot:-2deg">
+          <div class="tape tape--checker-green tape--card" aria-hidden="true"></div>
+          <div class="polaroid">
+            <div class="polaroid-img">
+              <img src="assets/images/web_suhu.png" alt="Tampilan Web Pengecekan Suhu Lab KIK">
+            </div>
+          </div>
+          <span class="project-number">01</span>
+          <h3 class="project-title">WEB PENGECEKAN SUHU</h3>
+          <p class="project-desc">Aplikasi web pemantau suhu &amp; cuaca real-time wilayah Lab KIK berbasis Flask, Jinja2, dan Open-Meteo API.</p>
+          <p class="project-tech">PYTHON • FLASK • JINJA2 • WEATHER API</p>
+          <div class="project-actions">
+            <a href="https://web-cuaca-steel.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-mini">LIVE DEMO</a>
+            <a href="https://github.com/Afa-El" target="_blank" rel="noopener noreferrer" class="btn-mini btn-mini--outline">SOURCE CODE</a>
+          </div>
+        </article>
+
+        <!-- 02: Website Kelas XI RPL 2 -->
+        <article class="project-card" data-category="website" style="--rot:1.5deg">
+          <div class="tape tape--blue tape--card" aria-hidden="true"></div>
+          <div class="polaroid">
+            <div class="polaroid-img">
+              <img src="assets/images/PROJECT_1.png" alt="Tampilan Website Kelas XI RPL 2">
+            </div>
+          </div>
+          <span class="project-number">02</span>
+          <h3 class="project-title">WEBSITE KELAS XI RPL 2</h3>
+          <p class="project-desc">Website kelas XI RPL 2 SMKS Brantas Karangkates. Turut merancang antarmuka UI/UX dan front-end web.</p>
+          <p class="project-tech">HTML5 • CSS3 • JAVASCRIPT • VERCEL</p>
+          <div class="project-actions">
+            <a href="https://xirpl2smkbrantas-website.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-mini">VIEW PROJECT</a>
+            <a href="https://github.com/Afa-El" target="_blank" rel="noopener noreferrer" class="btn-mini btn-mini--outline">GITHUB</a>
+          </div>
+        </article>
+
+        <!-- 03: Project UI/UX Pre-PKL -->
+        <article class="project-card" data-category="uiux" style="--rot:2deg">
+          <div class="tape tape--yellow tape--card" aria-hidden="true"></div>
+          <div class="polaroid">
+            <div class="polaroid-img">
+              <img src="assets/images/AI_UI.png" alt="Tampilan Project UI/UX Pre-PKL Figma">
+            </div>
+          </div>
+          <span class="project-number">03</span>
+          <h3 class="project-title">PROJECT UI/UX PRE-PKL</h3>
+          <p class="project-desc">Desain UI/UX komprehensif yang dirancang dan dipresentasikan sebagai persiapan sebelum penugasan PKL.</p>
+          <p class="project-tech">FIGMA • PROTOTYPING • DESIGN SYSTEM</p>
+          <div class="project-actions">
+            <a href="https://www.figma.com/design/8IazqlsDnOcRteFcBglRqT/PROJECT-UI-UX?t=pJy4PAOZPO9BKjFK-1" target="_blank" rel="noopener noreferrer" class="btn-mini">OPEN FIGMA</a>
+            <a href="https://www.figma.com/design/8IazqlsDnOcRteFcBglRqT/PROJECT-UI-UX?t=pJy4PAOZPO9BKjFK-1" target="_blank" rel="noopener noreferrer" class="btn-mini btn-mini--outline">PRESENTASI</a>
+          </div>
+        </article>
+
+        <!-- 04: Tugas Interactive Prototype -->
+        <article class="project-card" data-category="uiux" style="--rot:-2.5deg">
+          <div class="tape tape--checker-green tape--card" aria-hidden="true"></div>
+          <div class="polaroid">
+            <div class="polaroid-img">
+              <img src="assets/images/PROJECT_FIGMA.png" alt="Tampilan Tugas UI/UX Prototype Figma">
+            </div>
+          </div>
+          <span class="project-number">04</span>
+          <h3 class="project-title">TUGAS UI/UX PROTOTYPE</h3>
+          <p class="project-desc">Prototipe interaktif tugas sekolah di Figma dengan komponen interaktif dan navigasi antar halaman yang mulus.</p>
+          <p class="project-tech">FIGMA • INTERACTIVE PROTOTYPE • FLOW</p>
+          <div class="project-actions">
+            <a href="https://www.figma.com/proto/3K1UpUhY2nVhAehMWdPL4P/tgs?node-id=397-274&starting-point-node-id=397%3A274&t=404na8S03o3cEo30-1" target="_blank" rel="noopener noreferrer" class="btn-mini">PLAY PROTO</a>
+            <a href="https://www.figma.com/proto/3K1UpUhY2nVhAehMWdPL4P/tgs?node-id=397-274&starting-point-node-id=397%3A274&t=404na8S03o3cEo30-1" target="_blank" rel="noopener noreferrer" class="btn-mini btn-mini--outline">INTERACTIVE</a>
+          </div>
+        </article>
+
+        <!-- 05: Landing Page Janji Jiwa -->
+        <article class="project-card" data-category="website" style="--rot:1.2deg">
+          <div class="tape tape--checker-terracotta tape--card" aria-hidden="true"></div>
+          <div class="polaroid">
+            <div class="polaroid-img">
+              <img src="assets/images/PROJECT_WEB.png" alt="Tampilan Landing Page Janji Jiwa">
+            </div>
+          </div>
+          <span class="project-number">05</span>
+          <h3 class="project-title">LANDING PAGE JANJI JIWA</h3>
+          <p class="project-desc">Recreate website landing page brand Janji Jiwa (kopi &amp; toast) dengan katalog produk dan tata letak responsif.</p>
+          <p class="project-tech">HTML5 • CSS3 • RESPONSIVE DESIGN</p>
+          <div class="project-actions">
+            <a href="https://drive.google.com/drive/folders/1UotAsUUCON7D76E6SZh5DGiDKKAi0ER7?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-mini">DRIVE FILE</a>
+            <a href="https://github.com/Afa-El" target="_blank" rel="noopener noreferrer" class="btn-mini btn-mini--outline">SOURCE CODE</a>
+          </div>
+        </article>
+
+        <!-- 06: Simulasi Lampu Lalu Lintas -->
+        <article class="project-card" data-category="other" style="--rot:-1.8deg">
+          <div class="tape tape--blue tape--card" aria-hidden="true"></div>
+          <div class="polaroid">
+            <div class="polaroid-img">
+              <img src="assets/images/SIMULASI_LAMPU_LALULINTAS.png" alt="Simulasi Lampu Lalu Lintas Tinkercad">
+            </div>
+          </div>
+          <span class="project-number">06</span>
+          <h3 class="project-title">SIMULASI LAMPU LALULINTAS</h3>
+          <p class="project-desc">Simulasi rangkaian elektronika dan logika lampu lalu lintas interaktif berbasis Tinkercad Circuits.</p>
+          <p class="project-tech">TINKERCAD • CIRCUITS • LOGIKA DASAR</p>
+          <div class="project-actions">
+            <a href="https://drive.google.com/file/d/1v_L4St__xMli90VkKi5orHCdcDmnjLNb/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-mini">VIEW DEMO</a>
+            <a href="https://github.com/Afa-El" target="_blank" rel="noopener noreferrer" class="btn-mini btn-mini--outline">DETAIL</a>
+          </div>
+        </article>
+
+        <!-- 07: Python PBO & Utility -->
+        <article class="project-card" data-category="other" style="--rot:1.8deg">
+          <div class="tape tape--yellow tape--card" aria-hidden="true"></div>
+          <div class="polaroid">
+            <div class="polaroid-img">
+              <img src="assets/images/PROJECT_PYTHON.png" alt="Tampilan Proyek Python dan GUI">
+            </div>
+          </div>
+          <span class="project-number">07</span>
+          <h3 class="project-title">PYTHON PBO &amp; UTILITY</h3>
+          <p class="project-desc">Kumpulan proyek mandiri dan tugas sekolah mencakup konsep OOP/PBO, algoritma konversi suhu, dan GUI Tkinter.</p>
+          <p class="project-tech">PYTHON • TKINTER • OOP • ALGORITMA</p>
+          <div class="project-actions">
+            <a href="https://drive.google.com/drive/folders/1DrGqc6W1G5ZQpM9swlkK9OjUVZZWv8W6?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-mini">DRIVE FILE</a>
+            <a href="https://github.com/Afa-El" target="_blank" rel="noopener noreferrer" class="btn-mini btn-mini--outline">SCRIPTS</a>
+          </div>
+        </article>
+
+        <!-- 08: Desain 3D Mini Chick -->
+        <article class="project-card" data-category="other" style="--rot:-1.8deg">
+          <div class="tape tape--checker-terracotta tape--card" aria-hidden="true"></div>
+          <div class="polaroid">
+            <div class="polaroid-img">
+              <img src="assets/images/PROJECT_3D.png" alt="Desain 3D Mini Chick Tinkercad STL">
+            </div>
+          </div>
+          <span class="project-number">08</span>
+          <h3 class="project-title">3D MODEL — MINI CHICK</h3>
+          <p class="project-desc">Karakter 3D kustom "Mini Chick" berspeks dan jubah yang didesain interaktif dengan Tinkercad 3D Design, siap untuk 3D print (format STL).</p>
+          <p class="project-tech">TINKERCAD • 3D MODELING • STL FORMAT</p>
+          <div class="project-actions">
+            <a href="3D%20RANNDOM.stl" download="3D_RANNDOM_MINI_CHICK.stl" class="btn-mini">DOWNLOAD STL</a>
+            <a href="assets/images/PROJECT_3D.png" target="_blank" rel="noopener noreferrer" class="btn-mini btn-mini--outline">VIEW PREVIEW</a>
+          </div>
+        </article>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- CONTACT                        -->
+  <!-- ============================= -->
+  <section class="section contact tab-section" id="contact">
+    <div class="section-inner contact-layout">
+
+      <div class="contact-intro">
+        <div class="pill--contact float-reverse" style="--r:-4deg" aria-hidden="true">✉ INBOX OPEN</div>
+        <p class="eyebrow-handwritten">mari terhubung</p>
+        <h2 class="section-title">LET'S WORK<br>TOGETHER</h2>
+        <p class="about-text">Punya ide atau project? Mari kita buat sesuatu yang keren bersama.</p>
+
+        <div class="sticky-note sticky-note--contact float-slow" style="--r:4deg" aria-hidden="true">
+          ☕ Coffee chat?<br>Let's make something amazing together!
+        </div>
+
+        <div class="social-stickers">
+          <a href="https://www.instagram.com/afaaaa5689?igsh=MTR6ZzRmYmQwOHM5cA==" target="_blank" rel="noopener noreferrer" class="social-sticker" data-social="instagram" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <a href="https://github.com/Afa-El" target="_blank" rel="noopener noreferrer" class="social-sticker" data-social="github" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/afa-el-yuma-pratama-a98858384" target="_blank" rel="noopener noreferrer" class="social-sticker" data-social="linkedin" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.6 4.78 6V21h-4v-5.3c0-1.27-.02-2.9-1.77-2.9-1.78 0-2.05 1.37-2.05 2.8V21h-4V9Z"/></svg>
+          </a>
+          <a href="mailto:afaelyumapratama.rpl2@gmail.com" class="social-sticker" data-social="email" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap paper-card">
+        <span class="pin pin--corner" aria-hidden="true"></span>
+        <div class="form-stamp float-slow" style="--r:7deg" aria-hidden="true">📬 QUICK REPLY</div>
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="fieldName">Nama</label>
+            <input type="text" id="fieldName" name="name" placeholder="Nama kamu">
+            <span class="form-error" id="errName"></span>
+          </div>
+          <div class="form-group">
+            <label for="fieldEmail">Email</label>
+            <input type="email" id="fieldEmail" name="email" placeholder="kamu@email.com">
+            <span class="form-error" id="errEmail"></span>
+          </div>
+          <div class="form-group">
+            <label for="fieldSubject">Subject</label>
+            <input type="text" id="fieldSubject" name="subject" placeholder="Topik pesan">
+            <span class="form-error" id="errSubject"></span>
+          </div>
+          <div class="form-group">
+            <label for="fieldMessage">Pesan</label>
+            <textarea id="fieldMessage" name="message" rows="4" placeholder="Tulis pesanmu di sini..."></textarea>
+            <span class="form-error" id="errMessage"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">SEND MESSAGE</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================= -->
+<!-- FOOTER                         -->
+<!-- ============================= -->
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="#home" class="footer-logo" data-tab="home" data-link>AFA PORTFOLIO</a>
+    <p class="footer-tagline">Creative Developer &amp; Designer</p>
+
+    <nav class="footer-nav" aria-label="Navigasi cepat footer">
+      <a href="#home" data-tab="home" data-link>Home</a>
+      <span>•</span>
+      <a href="#about" data-tab="about" data-link>About</a>
+      <span>•</span>
+      <a href="#skills" data-tab="skills" data-link>Skills</a>
+      <span>•</span>
+      <a href="#projects" data-tab="projects" data-link>Projects</a>
+      <span>•</span>
+      <a href="#contact" data-tab="contact" data-link>Contact</a>
+    </nav>
+
+    <div class="social-stickers social-stickers--footer">
+      <a href="https://www.instagram.com/afaaaa5689?igsh=MTR6ZzRmYmQwOHM5cA==" target="_blank" rel="noopener noreferrer" class="social-sticker" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+      </a>
+      <a href="https://github.com/Afa-El" target="_blank" rel="noopener noreferrer" class="social-sticker" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/afa-el-yuma-pratama-a98858384" target="_blank" rel="noopener noreferrer" class="social-sticker" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.6 4.78 6V21h-4v-5.3c0-1.27-.02-2.9-1.77-2.9-1.78 0-2.05 1.37-2.05 2.8V21h-4V9Z"/></svg>
+      </a>
+      <a href="mailto:afaelyumapratama.rpl2@gmail.com" class="social-sticker" aria-label="Email">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+      </a>
+    </div>
+
+    <p class="footer-copy">© 2026 Afa El Yuma Pratama. All Rights Reserved.</p>
+    <p class="footer-made">Made with HTML • CSS • JavaScript</p>
+  </div>
+</footer>
+
+<!-- Toast notification -->
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <p class="toast-title">Message Sent Successfully!</p>
+  <p class="toast-sub">Thank you for contacting me.</p>
+</div>
+
+<!-- Back to top -->
+<button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">↑</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
